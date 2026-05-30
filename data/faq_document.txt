@@ -1,0 +1,62 @@
+DOCUMENTO FUENTE: Preguntas Frecuentes (FAQ) - BizFlow OS
+Este documento contiene las políticas oficiales, procedimientos operativos, configuraciones de seguridad y guías de funcionalidades de la plataforma BizFlow OS.
+
+1. Gestión de Cuentas y Accesos
+¿Cómo puedo restablecer mi contraseña si quedo fuera del sistema?
+Si no recuerdas tu contraseña, ve a la pantalla de inicio de sesión de BizFlow OS y haz clic en "¿Olvidó su contraseña?". Introduce tu correo electrónico corporativo registrado. Recibirás un enlace de restablecimiento válido por 15 minutos. Por motivos de seguridad, si fallas el intento de inicio de sesión más de 5 veces consecutivas, tu cuenta se bloqueará temporalmente por 30 minutos. Los administradores de TI de tu organización pueden desbloquear la cuenta manualmente desde el panel de control si es una emergencia.
+
+¿Qué es la Autenticación de Dos Factores (2FA) y cómo se configura?
+La Autenticación de Dos Factores (2FA) es una capa obligatoria de seguridad para todas las cuentas de nivel de Administrador y Editor. Para configurarla, ve a Configuración de Cuenta > Seguridad > Activar 2FA. El sistema mostrará un código QR que debes escanear con una aplicación de autenticación compatible (como Google Authenticator o Microsoft Authenticator). Una vez escaneado, introduce el código de 6 dígitos que genera la app para confirmar el enlace.
+
+¿Cómo solicito la baja o desactivación de una cuenta de usuario?
+Para dar de baja a un usuario, el Administrador de la cuenta debe dirigirse al módulo de "Gestión de Equipos". Busca el nombre del usuario, haz clic en los tres puntos de opciones y selecciona "Desactivar Usuario". Las cuentas nunca se eliminan de forma permanente inmediatamente para preservar el historial de auditoría y los registros de cambios en los proyectos. Un usuario desactivado perderá el acceso instantáneamente y dejará de consumir una licencia en el plan de facturación mensual.
+
+2. Planes, Facturación y Cancelaciones
+¿Cuáles son los ciclos de facturación disponibles y qué métodos de pago se aceptan?
+BizFlow OS ofrece dos ciclos de facturación: mensual y anual. El ciclo anual incluye un descuento del 20% sobre el precio total. Aceptamos tarjetas de crédito principales (Visa, Mastercard, American Express), transferencias bancarias bancarias para cuentas corporativas Enterprise, y pagos mediante PayPal. Las facturas se generan automáticamente el primer día de cada ciclo y se envían por correo electrónico al contacto de facturación designado.
+
+¿Cómo funciona la política de reembolsos de la plataforma?
+Ofrecemos una garantía de reembolso de 14 días para todas las suscripciones nuevas, ya sean mensuales o anuales. Si cancelas tu servicio dentro de los primeros 14 días desde el cargo inicial, puedes solicitar la devolución completa de tu dinero contactando a soporte@bizflow.com. Pasado este período de 14 días, no se otorgarán reembolsos parciales ni totales por los meses no utilizados, pero mantendrás el acceso a la plataforma hasta el final del periodo ya pagado.
+
+¿Qué sucede si mi pago es rechazado o se retrasa?
+Si un cobro automático falla, el sistema realizará tres intentos adicionales de cobro cada 48 horas. Durante este periodo de 7 días (periodo de gracia), la cuenta permanecerá completamente activa. Si tras el cuarto intento el pago sigue sin procesarse, la cuenta cambiará a estado "Suspendida". Los usuarios no podrán acceder a sus tableros ni datos, pero la información se guardará intacta por un periodo de 90 días antes de su eliminación definitiva.
+
+3. Funcionalidades del Sistema y Colaboración
+¿Cómo se crean y gestionan los flujos de trabajo automatizados?
+Para crear una automatización, dirígete al módulo "Automate" en el menú lateral. Haz clic en "Nuevo Flujo". Un flujo se compone de tres elementos: un Disparador (Trigger), una Condición (Condition) y una Acción (Action). Por ejemplo, puedes configurar que Cuando una tarea cambie a estado 'Aprobada' (Disparador), Si la prioridad es 'Alta' (Condición), Se envíe una notificación por Slack al supervisor (Acción). Puedes tener hasta 50 flujos activos simultáneamente en el plan Pro.
+
+¿Cuál es el límite de almacenamiento de archivos y qué formatos están permitidos?
+El límite de almacenamiento depende de tu plan de suscripción: el Plan Standard ofrece 10 GB por usuario, el Plan Pro ofrece 50 GB por usuario, y el Plan Enterprise cuenta con almacenamiento ilimitado. Soportamos archivos de imagen (JPEG, PNG, GIF), documentos (PDF, DOCX, XLSX, PPTX) y archivos comprimidos (ZIP, RAR). El tamaño máximo de un archivo individual que se puede subir es de 2 GB. No se permite la subida de archivos ejecutables (.exe, .bat) por razones de ciberseguridad.
+
+¿Cómo funciona el historial de versiones de los documentos?
+Cada vez que un usuario edita o sube una nueva versión de un documento en el módulo "Knowledge", BizFlow OS guarda una copia de la versión anterior. Para restaurar una versión pasada, abre el documento, haz clic en el icono de "Historial" (reloj) en la esquina superior derecha, selecciona la fecha y hora que deseas recuperar y haz clic en "Restaurar esta versión". El plan Pro guarda el historial por 30 días; el plan Enterprise lo guarda de forma indefinida.
+
+4. Políticas de Privacidad y Seguridad de Datos
+¿Dónde se almacenan los datos de nuestra empresa y qué tan seguros están?
+Los datos de BizFlow OS se alojan en servidores de Amazon Web Services (AWS) ubicados en la región de Virginia (EE. UU.) y Frankfurt (Alemania). Todos los datos almacenados se encriptan en reposo utilizando el algoritmo AES-256. Los datos en tránsito se protegen mediante protocolos TLS 1.3 de última generación. Realizamos copias de seguridad automáticas cada 24 horas, las cuales se replican en múltiples zonas de disponibilidad para evitar pérdidas catastróficas.
+
+¿Cumple BizFlow OS con las normativas GDPR y CCPA?
+Sí, BizFlow OS cumple plenamente con el Reglamento General de Protección de Datos (GDPR) de la Unión Europea y la Ley de Privacidad del Consumidor de California (CCPA). Los usuarios tienen derecho a exportar todos sus datos personales en un formato estructurado (JSON o CSV) o a solicitar la eliminación permanente de sus registros ("Derecho al olvido") enviando una solicitud formal al oficial de privacidad a privacy@bizflow.com.
+
+¿Cómo se manejan los accesos del personal de soporte a mis datos?
+Por defecto, ningún empleado de BizFlow OS tiene acceso a los datos internos, tableros o archivos de tu organización. Si necesitas asistencia técnica avanzada que requiera revisión interna, debes otorgar un "Permiso de Acceso Temporal" desde Configuración > Soporte Técnico > Permitir Acceso. Este permiso expira automáticamente en 24 horas y todas las acciones realizadas por el técnico quedan registradas en el Registro de Auditoría de tu empresa.
+
+5. Integraciones y API
+¿Cómo puedo generar una clave API para conectar aplicaciones externas?
+Los usuarios con rol de Administrador de TI pueden generar claves API. Ve a Configuración de la Organización > Integraciones > Desarrolladores. Haz clic en "Generar Nueva API Key", Asígnale un nombre descriptivo y selecciona los permisos de lectura o escritura. Asegúrate de copiar la clave en ese momento, ya que por seguridad no se volverá a mostrar en pantalla completa. Trata esta clave con el mismo cuidado que una contraseña de administrador.
+
+¿Cuáles son los límites de llamadas a la API (Rate Limiting)?
+Para garantizar la estabilidad de la plataforma para todos los usuarios, aplicamos límites estrictos de uso de la API. El plan Standard permite hasta 1,000 llamadas por hora, el plan Pro permite hasta 5,000 llamadas por hora, y el plan Enterprise tiene un límite flexible de hasta 20,000 llamadas por hora. Si superas este límite, la API devolverá un código de error HTTP 429 (Too Many Requests) hasta que comience la siguiente ventana de tiempo.
+
+6. Soporte Técnico y Niveles de Servicio (SLA)
+¿Cuáles son los canales de soporte disponibles y sus horarios de atención?
+Ofrecemos soporte técnico a través de tres canales: Centro de Ayuda autogestionado (24/7), Chat en vivo dentro de la aplicación, y sistema de tickets por correo electrónico. El horario de atención para los planes Standard y Pro es de lunes a viernes de 8:00 AM a 6:00 PM (EST). Los clientes del plan Enterprise disfrutan de soporte prioritario 24/7/365 con un Gestor de Éxito de Clientes (CSM) asignado en exclusiva.
+
+¿Cuáles son los tiempos de respuesta garantizados por el acuerdo de nivel de servicio (SLA)?
+Nuestros tiempos de respuesta varían según la criticidad del incidente y el nivel de plan:
+
+Prioridad Alta (Caída total del sistema): Plan Enterprise: < 1 hora. Plan Pro: < 4 horas.
+
+Prioridad Media (Funcionalidad afectada pero operable): Plan Enterprise: < 4 horas. Plan Pro: < 12 horas.
+
+Prioridad Baja (Consultas generales o errores estéticos): Todos los planes: < 24 horas hábiles.

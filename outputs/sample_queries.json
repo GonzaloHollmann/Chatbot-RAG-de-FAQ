@@ -1,0 +1,41 @@
+[
+    {
+        "user_question": "¿Cómo puedo restablecer mi contraseña?",
+        "system_answer": "Para restablecer tu contraseña, ve a la pantalla de inicio de sesión de BizFlow OS y haz clic en \"¿Olvidó su contraseña?\". Introduce tu correo electrónico corporativo registrado. Recibirás un enlace de restablecimiento válido por 15 minutos. Ten en cuenta que si fallas el intento de inicio de sesión más de 5 veces consecutivas, tu cuenta se bloqueará temporalmente por 30 minutos.",
+        "chunks_related": [
+            "1. Gestión de Cuentas y Accesos\n¿Cómo puedo restablecer mi contraseña si quedo fuera del sistema?",
+            "Si no recuerdas tu contraseña, ve a la pantalla de inicio de sesión de BizFlow OS y haz clic en \"¿Olvidó su contraseña?\". Introduce tu correo electrónico corporativo registrado. Recibirás un enlace de restablecimiento válido por 15 minutos. Por motivos de seguridad, si fallas el intento de inicio de sesión más de 5 veces consecutivas, tu cuenta se bloqueará temporalmente por 30 minutos",
+            "¿Cómo solicito la baja o desactivación de una cuenta de usuario?"
+        ],
+        "evaluation": {
+            "score": 10,
+            "reason": "La respuesta es completamente relevante y precisa, ya que aborda directamente cómo restablecer la contraseña utilizando la información proporcionada en el contexto. Además, incluye detalles importantes sobre el proceso y las medidas de seguridad, utilizando toda la información relevante del contexto."
+        }
+    },
+    {
+        "user_question": "¿Cuáles son los requisitos de capital para que una empresa califique al plan Enterprise?",
+        "system_answer": "No lo sé.",
+        "chunks_related": [
+            "El límite de almacenamiento depende de tu plan de suscripción: el Plan Standard ofrece 10 GB por usuario, el Plan Pro ofrece 50 GB por usuario, y el Plan Enterprise cuenta con almacenamiento ilimitado. Soportamos archivos de imagen (JPEG, PNG, GIF), documentos (PDF, DOCX, XLSX, PPTX) y archivos comprimidos (ZIP, RAR). El tamaño máximo de un archivo individual que se puede subir es de 2 GB. No se permite la subida de archivos ejecutables (.exe, .bat) por razones de ciberseguridad.",
+            "¿Cuáles son los tiempos de respuesta garantizados por el acuerdo de nivel de servicio (SLA)?\nNuestros tiempos de respuesta varían según la criticidad del incidente y el nivel de plan:\n\nPrioridad Alta (Caída total del sistema): Plan Enterprise: < 1 hora. Plan Pro: < 4 horas.\n\nPrioridad Media (Funcionalidad afectada pero operable): Plan Enterprise: < 4 horas. Plan Pro: < 12 horas.\n\nPrioridad Baja (Consultas generales o errores estéticos): Todos los planes: < 24 horas hábiles.",
+            "¿Cuáles son los canales de soporte disponibles y sus horarios de atención?\nOfrecemos soporte técnico a través de tres canales: Centro de Ayuda autogestionado (24/7), Chat en vivo dentro de la aplicación, y sistema de tickets por correo electrónico. El horario de atención para los planes Standard y Pro es de lunes a viernes de 8: 00 AM a 6: 00 PM (EST). Los clientes del plan Enterprise disfrutan de soporte prioritario 24/7/365 con un Gestor de Éxito de Clientes (CSM) asignado en exclusiva."
+        ],
+        "evaluation": {
+            "score": 0,
+            "reason": "La respuesta 'No lo sé' no aborda la pregunta sobre requisitos de capital, careciendo de relevancia y completitud."
+        }
+    },
+    {
+        "user_question": "Contraté el servicio anual hace 10 días pero mi equipo prefirió usar otra herramienta. ¿Puedo pedir que me devuelvan el dinero?",
+        "system_answer": "No, no puedes solicitar un reembolso ya que han pasado 10 días desde el cargo inicial y la garantía de reembolso solo aplica si cancelas tu servicio dentro de los primeros 14 días. Sin embargo, después de este período, no se otorgarán reembolsos por los meses no utilizados, aunque mantendrás el acceso a la plataforma hasta el final del periodo ya pagado.",
+        "chunks_related": [
+            "Ofrecemos una garantía de reembolso de 14 días para todas las suscripciones nuevas, ya sean mensuales o anuales. Si cancelas tu servicio dentro de los primeros 14 días desde el cargo inicial, puedes solicitar la devolución completa de tu dinero contactando a soporte@bizflow.com. Pasado este período de 14 días, no se otorgarán reembolsos parciales ni totales por los meses no utilizados, pero mantendrás el acceso a la plataforma hasta el final del periodo ya pagado.",
+            "Si un cobro automático falla, el sistema realizará tres intentos adicionales de cobro cada 48 horas. Durante este periodo de 7 días (periodo de gracia), la cuenta permanecerá completamente activa. Si tras el cuarto intento el pago sigue sin procesarse, la cuenta cambiará a estado \"Suspendida\". Los usuarios no podrán acceder a sus tableros ni datos, pero la información se guardará intacta por un periodo de 90 días antes de su eliminación definitiva.",
+            "¿Qué sucede si mi pago es rechazado o se retrasa?"
+        ],
+        "evaluation": {
+            "score": 9,
+            "reason": "La respuesta es relevante y precisa, ya que aborda directamente la pregunta sobre el reembolso y se basa en la información proporcionada. Sin embargo, podría mejorar al mencionar que el usuario aún tiene acceso a la plataforma hasta el final del periodo pagado, aunque esto se infiere de la respuesta."
+        }
+    }
+]
